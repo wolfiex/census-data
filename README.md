@@ -5,7 +5,7 @@ Processed data for the census atlas app
 
 |             | i_CSV    | i_JSON   | i_Uint    | l_Uint    |
 |:------------|:---------|:---------|:----------|:----------|
-| Computate ∆ | 1.5      | 1.6      | 2.29      | 33.2      |
+| Compute ∆ | 1.5      | 1.6      | 2.29      | 33.2      |
 | ∑ size      | 751.1 MB | 1.6 GB   | 298.5 MB  | 298.5 MB  |
 | µ size      | 512.4 KB | 1.1 MB   | 203.6 KB  | 8.8 KB    |
 | std size    | 40.4 KB  | 40.4 KB  | 0.0 bytes | 0.0 bytes |
