@@ -12,7 +12,7 @@ dloc = 'census-atlas/data/lsoa'
 files = glob.glob(dloc + '/*.csv')
 files.sort()
 df = pd.read_csv(files[0])
-codes = file.GEOGRAPHY_CODE
+codes = df.GEOGRAPHY_CODE
 shape = list(df.shape)
 shape.append(len(files))
 shape
@@ -30,7 +30,7 @@ j=0
 dummy = np.empty(shape=(shape[0],shape[2],shape[1]))
 for i in tqdm(files):
     df = pd.read_csv(i).set_index('GEOGRAPHY_CODE').loc[codes]
-    df['perc'] = (df[df.columns[-1]]/df['0'])*100
+    df['perc'] = (df[df.columns[-1]]/df['0'])*10000 # 100% and 2dp so /100
     dummy[:,j,:] = df.values
     j += 1
 

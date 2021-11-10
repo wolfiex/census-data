@@ -98,6 +98,9 @@ if __name__ == '__main__':
         
     warnings = p_map(gen_buff_ifirst, list(indi.items()))
     
-    warnings2 = p_map(gen_buff_lfirst, list(geocd.items())) # very slow! 
+#    warnings2 = p_map(gen_buff_lfirst, list(geocd.items())) # very slow! 
     
-    warnings3 = p_map(gen_buff_itext, list(indi.items()))
+#    warnings3 = p_map(gen_buff_itext, list(indi.items()))
+
+
+    with open('data/geocodes.txt','w') as cd: cd.write([x for _,x in sorted(zip(indi.values(),indi.keys()))].__str__())
