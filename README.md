@@ -23,7 +23,7 @@ Some research into the different file types we can use to load the data.
 
 ## Usage in JS
 The binary files can be obtained using the fetch api. 
-```
+```js
 url = 'https://raw.githubusercontent.com/wolfiex/census-data/main/test.buffer'
 fetch(url)
     .then(response => response.arrayBuffer())
