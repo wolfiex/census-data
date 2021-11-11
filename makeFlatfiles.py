@@ -103,4 +103,4 @@ if __name__ == '__main__':
 #    warnings3 = p_map(gen_buff_itext, list(indi.items()))
 
 
-    with open('data/geocodes.txt','w') as cd: cd.write([x for _,x in sorted(zip(indi.values(),indi.keys()))].__str__())
+    with open('data/geocodes.txt','w') as cd: cd.write([x for _,x in sorted(zip(geocd.values(),geocd.keys()))].__str__())
